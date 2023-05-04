@@ -53,7 +53,7 @@ header nav ul {
   font-size: 0.8em;
 }
 
-.visible-nav{
+.visible-nav {
   visibility: hidden;
 }
 
@@ -76,7 +76,6 @@ header nav {
 .rotated {
   transform: rotate(180deg);
 }
-
 
 header nav a {
   color: rgb(165, 163, 163);
@@ -222,6 +221,8 @@ footer p {
   color: white;
 }
 
+
+
 @media (min-width: 1025px) {
   header img {
     height: 5rem;
@@ -242,7 +243,7 @@ footer p {
     visibility: hidden;
   }
 
-  .visible-nav{
+  .visible-nav {
     visibility: visible;
   }
 
@@ -287,7 +288,7 @@ footer p {
     margin-top: 2rem;
     font-size: 1em;
   }
-  
+
   .carrito-vacio a {
     color: grey;
     font-size: 4em;
@@ -306,6 +307,8 @@ footer p {
   }
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
   header img {
     height: 4rem;
@@ -322,11 +325,11 @@ footer p {
     visibility: visible;
   }
 
-   .nav-bar {
+  .nav-bar {
     visibility: hidden;
   }
 
-  .visible-nav{
+  .visible-nav {
     visibility: visible;
   }
 
@@ -372,7 +375,7 @@ footer p {
     margin-top: 2rem;
     font-size: 0.8em;
   }
-  
+
   .carrito-vacio a {
     color: grey;
     font-size: 3.5em;

@@ -1,10 +1,9 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
 }
-
 
 :root {
   --principal: rgb(255, 189, 67);
@@ -47,7 +46,6 @@ form {
   gap: 1em;
 }
 
-
 input {
   border: none;
   border-bottom: solid 1px grey;
@@ -82,7 +80,6 @@ button:hover {
 .visible {
   visibility: visible;
 }
-
 
 @media (min-width: 1025px) {
   body {

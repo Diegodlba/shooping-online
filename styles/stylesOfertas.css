@@ -77,7 +77,6 @@ header nav {
   transform: rotate(180deg);
 }
 
-
 header nav a {
   color: rgb(165, 163, 163);
   border-radius: 10%;
@@ -172,6 +171,8 @@ footer p {
   color: white;
 }
 
+
+
 @media (min-width: 1025px) {
   header img {
     height: 5rem;
@@ -224,6 +225,8 @@ footer p {
     font-size: 1em;
   }
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   header img {

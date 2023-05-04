@@ -225,6 +225,8 @@ footer p {
   color: white;
 }
 
+
+
 @media (min-width: 1025px) {
   header img {
     height: 5rem;
@@ -301,6 +303,8 @@ footer p {
   }
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
   header img {
     height: 4rem;
@@ -320,7 +324,6 @@ footer p {
   .visible-nav{
     visibility: visible;
   }
-
 
   .nav-bar {
     visibility: hidden;

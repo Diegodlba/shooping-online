@@ -11,9 +11,7 @@ window.addEventListener("load", function () {
   const lastNameError = document.querySelector("#lastNameError");
   const emailError = document.querySelector("#emailError");
   const passwordError = document.querySelector("#passwordError");
-  const passwordRepetidaError = document.querySelector(
-    "#passwordRepetidaError"
-  );
+  const passwordRepetidaError = document.querySelector("#passwordRepetidaError");
 
   const estadoUsuario = {
     firstName: "",
