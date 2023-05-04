@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/stylesSignUp.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/signUp.js"></script>
+    <title>SignUp</title>
+  </head>
+  <body>
+    <img src="/img/Login.png" alt="fondo login" />
+    <form>
+      <div>
+        <h2>Crear cuenta</h2>
+      </div>
+      <div>
+        <input type="inputFirsName" id="inputFirstName" placeholder="Nombre" autofocus/>
+        <p>
+          <small class="error" id="firstNameError"
+            >Al menos 4 carácterer y no contener números</small
+          >
+        </p>
+      </div>
+      <div>
+        <input type="inputLastName" id="inputLastName" placeholder="Apellido" />
+        <p>
+          <small class="error" id="lastNameError"
+            >Al menos 4 carácterer y no contener números</small
+          >
+        </p>
+      </div>
+      <div>
+        <input type="inputEmail" id="inputEmail" placeholder="E-mail" />
+        <p>
+          <small class="error" id="emailError">Debe ser un email válido.</small>
+        </p>
+      </div>
+      <div>
+        <input type="password" id="inputPassword" placeholder="Contraseña" />
+        <p>
+          <small class="error" id="passwordError"
+            >La contraseña no es valida.</small
+          >
+        </p>
+      </div>
+      <div>
+        <input
+          type="password"
+          id="inputPasswordRepetida"
+          placeholder="Repetir contraseña"
+        />
+        <p>
+          <small class="error" id="passwordRepetidaError"
+            >Las contraseñas deben coincidir.</small
+          >
+        </p>
+      </div>
+      <div class="display">
+        <button type="submit">Aceptar</button>
+        <a href="/login.html">Ya estoy registrado</a>
+      </div>
+    </form>
+  </body>
+</html>

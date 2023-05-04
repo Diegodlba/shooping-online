@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --principal: rgb(255, 189, 67);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header section {
+  display: flex;
+  align-items: center;
+  background-color: var(--principal);
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+header img {
+  height: 3rem;
+  padding-left: 0.6rem;
+}
+
+.nombreUsuario {
+  display: flex;
+  color: white;
+  font-size: 0.6em;
+  padding-right: 0.6rem;
+}
+
+.nombreUsuario a {
+  color: white;
+  padding: 0 0.2rem;
+}
+
+.nombreUsuario a:hover {
+  color: grey;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.8rem;
+  font-size: 0.8em;
+}
+
+.visible-nav{
+  visibility: hidden;
+}
+
+header nav {
+  display: flex;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  background-color: rgb(245, 234, 220);
+}
+
+.nav-bar {
+  justify-self: center;
+  align-self: center;
+  margin-right: 1rem;
+  font-size: 1.2em;
+  display: block;
+  cursor: pointer;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+
+header nav a {
+  color: rgb(165, 163, 163);
+  border-radius: 10%;
+}
+header nav a:hover {
+  color: orange;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrito-vacio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  margin-top: 2rem;
+  font-size: 0.6em;
+}
+
+.carrito-vacio a {
+  color: grey;
+  font-size: 3em;
+  padding-top: 1rem;
+}
+
+.carrito-vacio a:hover {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 1em 3em 1em;
+  border: 1px solid var(--principal);
+  padding: 1em;
+  font-size: 0.8em;
+  align-items: center;
+  text-align: center;
+}
+
+.container img {
+  width: 30%;
+}
+
+.descripcion {
+  width: 80%;
+}
+
+.descripcion h3 {
+  padding: 1em 0 0.5em;
+}
+
+.titulo-precio {
+  padding-top: 2em;
+  width: 80%;
+}
+
+.titulo-precio h3 {
+  padding-bottom: 0.5rem;
+}
+
+.modificar-cantidad {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 0.4em;
+  justify-content: center;
+}
+
+.modificar-cantidad i:hover {
+  color: grey;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.total-acciones {
+  margin-top: 1.5rem;
+  width: 80%;
+}
+
+.total-acciones p {
+  border: 1px solid red;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.eliminar-producto:hover {
+  color: red;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.suma-total {
+  border: 1px solid var(--principal);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.suma-total button {
+  border: solid 1px rgb(255, 189, 67);
+  border-radius: 30px;
+  cursor: pointer;
+  width: 25%;
+}
+
+.suma-total button:active {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  background-color: var(--principal);
+  color: black;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  gap: 0.5rem;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: grey;
+}
+
+footer p {
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  header img {
+    height: 5rem;
+    padding-left: 2rem;
+  }
+
+  .nombreUsuario {
+    font-size: 1em;
+    padding-right: 2rem;
+  }
+
+  header nav ul {
+    font-size: 1em;
+    visibility: visible;
+  }
+
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .visible-nav{
+    visibility: visible;
+  }
+
+  header nav {
+    grid-template-columns: 99.9% 0.1%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 5rem;
+    margin: 2em;
+    font-size: 1em;
+  }
+
+  .titulo-precio {
+    padding-top: 0;
+  }
+
+  .titulo-precio h3 {
+    padding-bottom: 1rem;
+  }
+
+  .total-acciones {
+    margin-top: 0;
+  }
+
+  .suma-total {
+    margin: 2rem;
+    font-size: 1em;
+  }
+
+  .carrito-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    margin-top: 2rem;
+    font-size: 1em;
+  }
+  
+  .carrito-vacio a {
+    color: grey;
+    font-size: 4em;
+    padding-top: 1rem;
+  }
+
+  footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    font-size: 1em;
+  }
+
+  footer h3 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header img {
+    height: 4rem;
+    padding-left: 2rem;
+  }
+
+  .nombreUsuario {
+    font-size: 0.9em;
+    padding-right: 2rem;
+  }
+
+  header nav ul {
+    font-size: 0.9em;
+    visibility: visible;
+  }
+
+   .nav-bar {
+    visibility: hidden;
+  }
+
+  .visible-nav{
+    visibility: visible;
+  }
+
+  header nav {
+    grid-template-columns: 99.9% 0.1%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: row;
+    gap: 5rem;
+    margin: 2em;
+    font-size: 0.9em;
+  }
+
+  .titulo-precio {
+    padding-top: 0;
+  }
+
+  .titulo-precio h3 {
+    padding-bottom: 1rem;
+  }
+
+  .total-acciones {
+    margin-top: 0;
+    align-self: flex-end;
+  }
+
+  .suma-total {
+    margin: 2rem;
+    font-size: 1em;
+  }
+
+  .carrito-vacio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    margin-top: 2rem;
+    font-size: 0.8em;
+  }
+  
+  .carrito-vacio a {
+    color: grey;
+    font-size: 3.5em;
+    padding-top: 1rem;
+  }
+
+  footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+    font-size: 1em;
+  }
+
+  footer h3 {
+    font-size: 1em;
+  }
+}
