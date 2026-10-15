@@ -70,27 +70,15 @@ window.addEventListener("load", function () {
     mostrarErrores();
   });
 
-  const validarFirstName = (name) => {
-    let resultado = false;
+const soloLetras = /^[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]+$/;
 
-    // si pasa las pruebas lo damos por válido 👇
-    if (name.length > 3 && !isNaN(name)) {
-      resultado = true;
-    }
+const validarFirstName = (name) => {
+  return name.trim().length > 3 && soloLetras.test(name);
+};
 
-    return resultado;
-  };
-
-  const validarLastName = (surname) => {
-    let resultado = false;
-
-    // si pasa las pruebas lo damos por válido 👇
-    if (surname.length > 3 && !isNaN(surname)) {
-      resultado = true;
-    }
-
-    return resultado;
-  };
+const validarLastName = (surname) => {
+  return surname.trim().length > 3 && soloLetras.test(surname);
+};
 
   const validarEmail = (email) => {
     let resultado = false;
